@@ -28,7 +28,7 @@ func RegisterRoutes() *gin.Engine {
 			c.String(http.StatusNotFound, "Data Not found")
 			return
 		}
-		c.HTML(http.StatusOK, "vacation_overview.html", map[string]interface{}{
+		c.HTML(http.StatusOK, "vacation_overview.html", gin.H{
 			"TimesOff": timeOff,
 		})
 	})
