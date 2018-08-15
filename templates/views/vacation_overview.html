@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   {{range .TimesOff}}
+     <div class="row col-lg-12">
+        <div class="col-lg-3" >{{.StartDate.Format "2-Jan"}}</div>
+        <div class="col-lg-3" >{{.Amount}}</div>
+        <div class="col-lg-3" >{{.Status}}</div>
+     </div>
+   {{end}}
+</body>
+</html>
